@@ -1,11 +1,12 @@
 xpath = '//*[@id="quote-header-info"]/div[3]/div[1]/div/span[1]'
 website = "https://finance.yahoo.com/quote/TSLA/"
+crhomedriverpath = r'C:\Users\HP Gold\Desktop\Programs\Python\Web Automation\chromedriver.exe' #Change the path your location... 
 limit = 480.00
 
 from selenium import webdriver
 import time, yagmail
 
-driver = webdriver.Chrome(executable_path=r'C:\Users\HP Gold\Desktop\Programs\Python\Web Automation\chromedriver.exe')
+driver = webdriver.Chrome(executable_path=crhomedriverpath)
 
 driver.set_page_load_timeout(30)
 driver.get(website)
